@@ -22,7 +22,7 @@ on:
           - openwrt:21.02.7
           - openwrt:19.07.10
           - openwrt:18.06.9
-          - immortalwrt:21.02.6
+          - immortalwrt:21.02.7
       openwrt_board:
         description: "Select device board"
         required: false
@@ -86,6 +86,7 @@ on:
           - s905w-x96w
           - s905x
           - s905x-b860h
+          - s905x-nexbox-a95x
           - s905x-t95
           - s905x-tbee
           - s905x-tx9
@@ -167,7 +168,7 @@ on:
       kernel_usage:
         description: "Set the tags of the stable kernel."
         required: false
-        default: "dev"
+        default: "stable"
         type: choice
         options:
           - stable
