@@ -140,7 +140,7 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
-    tinyfm_api="https://api.github.com/repos/muink/luci-app-tinyfilemanager/releases{/id}"
+    tinyfm_api="https://api.github.com/repos/muink/luci-app-tinyfilemanager/releases"
     #
     tinyfm_file="luci-app-tinyfilemanager"
     tinyfm_file_down="$(curl -s ${tinyfm_api} | grep "browser_download_url" | grep -oE "https.*${tinyfm_name}.*.ipk" | head -n 1)"
