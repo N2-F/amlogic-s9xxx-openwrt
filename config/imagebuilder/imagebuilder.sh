@@ -140,6 +140,14 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
+    tinyfm_api="https://api.github.com/repos/muink/luci-app-tinyfilemanager/releases"
+    #
+    tinyfm_file="luci-app-tinyfilemanager"
+    tinyfm_file_down="$(curl -s ${tinyfm_api} | grep "browser_download_url" | grep -oE "https.*${tinyfm_name}.*.ipk" | head -n 1)"
+    curl -fsSOJL ${tinyfm_file_down}
+    [[ "${?}" -eq "0" ]] || error_msg "[ ${tinyfm_file} ] download failed!"
+    echo -e "${INFO} The [ ${tinyfm_file} ] is downloaded successfully."
+    #
 
     sync && sleep 3
     echo -e "${INFO} [ packages ] directory status: $(ls -al 2>/dev/null)"
@@ -202,6 +210,8 @@ rebuild_firmware() {
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
+        \
+        luci-app-tinyfilemanager \
         \
         ${config_list} \
         "
