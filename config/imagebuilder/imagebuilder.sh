@@ -140,13 +140,13 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
-    tinyfm_api="https://api.github.com/repos/muink/luci-app-tinyfilemanager/releases"
+    #tinyfm_api="https://api.github.com/repos/muink/luci-app-tinyfilemanager/releases"
     #
-    tinyfm_file="luci-app-tinyfilemanager"
-    tinyfm_file_down="$(curl -s ${tinyfm_api} | grep "browser_download_url" | grep -oE "https.*${tinyfm_name}.*.ipk" | head -n 1)"
-    curl -fsSOJL ${tinyfm_file_down}
-    [[ "${?}" -eq "0" ]] || error_msg "[ ${tinyfm_file} ] download failed!"
-    echo -e "${INFO} The [ ${tinyfm_file} ] is downloaded successfully."
+    #tinyfm_file="luci-app-tinyfilemanager"
+    #tinyfm_file_down="$(curl -s ${tinyfm_api} | grep "browser_download_url" | grep -oE "https.*${tinyfm_name}.*.ipk" | head -n 1)"
+    #curl -fsSOJL ${tinyfm_file_down}
+    #[[ "${?}" -eq "0" ]] || error_msg "[ ${tinyfm_file} ] download failed!"
+    #echo -e "${INFO} The [ ${tinyfm_file} ] is downloaded successfully."
     #
 
     sync && sleep 3
