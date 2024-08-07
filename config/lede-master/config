@@ -8,7 +8,7 @@ CONFIG_HOST_OS_LINUX=y
 # CONFIG_HOST_OS_MACOS is not set
 # CONFIG_TARGET_airoha is not set
 # CONFIG_TARGET_sunxi is not set
-# CONFIG_TARGET_amlogic is not set
+CONFIG_TARGET_amlogic=y
 # CONFIG_TARGET_silicon is not set
 # CONFIG_TARGET_apm821xx is not set
 # CONFIG_TARGET_ath25 is not set
@@ -38,7 +38,7 @@ CONFIG_HOST_OS_LINUX=y
 # CONFIG_TARGET_octeontx is not set
 # CONFIG_TARGET_oxnas is not set
 # CONFIG_TARGET_phytium is not set
-CONFIG_TARGET_armvirt=y
+# CONFIG_TARGET_armvirt=y
 # CONFIG_TARGET_qualcommax is not set
 # CONFIG_TARGET_ipq40xx is not set
 # CONFIG_TARGET_ipq806x is not set
@@ -72,8 +72,8 @@ CONFIG_DEFAULT_ca-bundle=y
 CONFIG_DEFAULT_ca-certificates=y
 CONFIG_DEFAULT_coremark=y
 CONFIG_DEFAULT_curl=y
-CONFIG_DEFAULT_ddns-scripts_aliyun=y
-CONFIG_DEFAULT_ddns-scripts_dnspod=y
+#CONFIG_DEFAULT_ddns-scripts_aliyun=y
+#CONFIG_DEFAULT_ddns-scripts_dnspod=y
 CONFIG_DEFAULT_default-settings=y
 CONFIG_DEFAULT_dnsmasq-full=y
 CONFIG_DEFAULT_dropbear=y
@@ -108,18 +108,18 @@ CONFIG_DEFAULT_libgcc=y
 CONFIG_DEFAULT_libustream-openssl=y
 CONFIG_DEFAULT_logd=y
 CONFIG_DEFAULT_luci=y
-CONFIG_DEFAULT_luci-app-accesscontrol=y
-CONFIG_DEFAULT_luci-app-arpbind=y
-CONFIG_DEFAULT_luci-app-autoreboot=y
-CONFIG_DEFAULT_luci-app-ddns=y
+#CONFIG_DEFAULT_luci-app-accesscontrol=y
+#CONFIG_DEFAULT_luci-app-arpbind=y
+#CONFIG_DEFAULT_luci-app-autoreboot=y
+#CONFIG_DEFAULT_luci-app-ddns=y
 CONFIG_DEFAULT_luci-app-filetransfer=y
-CONFIG_DEFAULT_luci-app-nlbwmon=y
-CONFIG_DEFAULT_luci-app-ssr-plus=y
+#CONFIG_DEFAULT_luci-app-nlbwmon=y
+#CONFIG_DEFAULT_luci-app-ssr-plus=y
 CONFIG_DEFAULT_luci-app-turboacc=y
-CONFIG_DEFAULT_luci-app-upnp=y
-CONFIG_DEFAULT_luci-app-vlmcsd=y
-CONFIG_DEFAULT_luci-app-vsftpd=y
-CONFIG_DEFAULT_luci-app-wol=y
+#CONFIG_DEFAULT_luci-app-upnp=y
+#CONFIG_DEFAULT_luci-app-vlmcsd=y
+#CONFIG_DEFAULT_luci-app-vsftpd=y
+#CONFIG_DEFAULT_luci-app-wol=y
 CONFIG_DEFAULT_luci-proto-ipv6=y
 CONFIG_DEFAULT_mkf2fs=y
 CONFIG_DEFAULT_mtd=y
@@ -129,7 +129,7 @@ CONFIG_DEFAULT_odhcpd-ipv6only=y
 CONFIG_DEFAULT_opkg=y
 CONFIG_DEFAULT_partx-utils=y
 CONFIG_DEFAULT_ppp=y
-CONFIG_DEFAULT_ppp-mod-pppoe=y
+#CONFIG_DEFAULT_ppp-mod-pppoe=y
 CONFIG_DEFAULT_procd=y
 CONFIG_DEFAULT_procd-ujail=y
 CONFIG_DEFAULT_uci=y
@@ -4881,7 +4881,7 @@ CONFIG_LUCI_LANG_en=y
 # CONFIG_LUCI_LANG_tr is not set
 # CONFIG_LUCI_LANG_uk is not set
 # CONFIG_LUCI_LANG_vi is not set
-CONFIG_LUCI_LANG_zh-cn=y
+#CONFIG_LUCI_LANG_zh-cn=y
 # CONFIG_LUCI_LANG_zh-tw is not set
 # end of Translations
 
@@ -5070,16 +5070,16 @@ CONFIG_PACKAGE_luci-theme-material=y
 #
 CONFIG_PACKAGE_luci-proto-3g=y
 # CONFIG_PACKAGE_luci-proto-3x is not set
-CONFIG_PACKAGE_luci-proto-bonding=y
-CONFIG_PACKAGE_luci-proto-ipip=y
+#CONFIG_PACKAGE_luci-proto-bonding=y
+#CONFIG_PACKAGE_luci-proto-ipip=y
 CONFIG_PACKAGE_luci-proto-ipv6=y
 # CONFIG_PACKAGE_luci-proto-mbim is not set
 CONFIG_PACKAGE_luci-proto-modemmanager=y
 CONFIG_PACKAGE_luci-proto-ncm=y
-CONFIG_PACKAGE_luci-proto-openconnect=y
+#CONFIG_PACKAGE_luci-proto-openconnect=y
 CONFIG_PACKAGE_luci-proto-ppp=y
 CONFIG_PACKAGE_luci-proto-qmi=y
-CONFIG_PACKAGE_luci-proto-relay=y
+#CONFIG_PACKAGE_luci-proto-relay=y
 # CONFIG_PACKAGE_luci-proto-vpnc is not set
 # CONFIG_PACKAGE_luci-proto-vxlan is not set
 # CONFIG_PACKAGE_luci-proto-wireguard is not set
@@ -5107,12 +5107,12 @@ CONFIG_PACKAGE_luci-lib-nixio_openssl=y
 # end of 6. Libraries
 
 CONFIG_PACKAGE_default-settings=y
-CONFIG_PACKAGE_luci-i18n-accesscontrol-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-adbyby-plus-zh-cn=y
+#CONFIG_PACKAGE_luci-i18n-accesscontrol-zh-cn=y
+#CONFIG_PACKAGE_luci-i18n-adbyby-plus-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-amlogic-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-amlogic-zh_Hans is not set
-CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
+#CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=y
+#CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-base-ca is not set
 # CONFIG_PACKAGE_luci-i18n-base-cs is not set
 # CONFIG_PACKAGE_luci-i18n-base-de is not set
@@ -5468,8 +5468,8 @@ CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn=y
 #
 # Cloud Manager
 #
-CONFIG_PACKAGE_rclone-ng=y
-CONFIG_PACKAGE_rclone-webui-react=y
+#CONFIG_PACKAGE_rclone-ng=y
+#CONFIG_PACKAGE_rclone-webui-react=y
 # end of Cloud Manager
 
 #
@@ -5502,16 +5502,16 @@ CONFIG_PACKAGE_curl=y
 # CONFIG_PACKAGE_gowebdav is not set
 # CONFIG_PACKAGE_lftp is not set
 # CONFIG_PACKAGE_ps3netsrv is not set
-CONFIG_PACKAGE_rclone=y
+#CONFIG_PACKAGE_rclone=y
 # CONFIG_RCLONE_COMPRESS_GOPROXY is not set
 # CONFIG_RCLONE_COMPRESS_UPX is not set
-CONFIG_PACKAGE_rclone-config=y
+#CONFIG_PACKAGE_rclone-config=y
 # CONFIG_PACKAGE_rosy-file-server is not set
 # CONFIG_PACKAGE_rsync is not set
 # CONFIG_PACKAGE_rsyncd is not set
 # CONFIG_PACKAGE_vsftpd is not set
-CONFIG_PACKAGE_vsftpd-alt=y
-CONFIG_VSFTPD_USE_UCI_SCRIPTS=y
+#CONFIG_PACKAGE_vsftpd-alt=y
+#CONFIG_VSFTPD_USE_UCI_SCRIPTS=y
 # CONFIG_PACKAGE_vsftpd-tls is not set
 # CONFIG_PACKAGE_wget-nossl is not set
 CONFIG_PACKAGE_wget-ssl=y
@@ -5647,7 +5647,7 @@ CONFIG_PACKAGE_miniupnpd=y
 # CONFIG_PACKAGE_avahi-autoipd is not set
 # CONFIG_PACKAGE_avahi-daemon-service-http is not set
 # CONFIG_PACKAGE_avahi-daemon-service-ssh is not set
-CONFIG_PACKAGE_avahi-dbus-daemon=y
+#CONFIG_PACKAGE_avahi-dbus-daemon=y
 # CONFIG_PACKAGE_avahi-dnsconfd is not set
 # CONFIG_PACKAGE_avahi-nodbus-daemon is not set
 # CONFIG_PACKAGE_avahi-utils is not set
@@ -5656,20 +5656,20 @@ CONFIG_PACKAGE_avahi-dbus-daemon=y
 # CONFIG_PACKAGE_bind-ddns-confgen is not set
 # CONFIG_PACKAGE_bind-dig is not set
 # CONFIG_PACKAGE_bind-dnssec is not set
-CONFIG_PACKAGE_bind-host=y
+#CONFIG_PACKAGE_bind-host=y
 # CONFIG_PACKAGE_bind-nslookup is not set
 # CONFIG_PACKAGE_bind-rndc is not set
-CONFIG_PACKAGE_bind-server=y
+#CONFIG_PACKAGE_bind-server=y
 # CONFIG_BIND_LIBJSON is not set
 # CONFIG_BIND_LIBXML2 is not set
 CONFIG_BIND_ENABLE_DOH=y
 # CONFIG_BIND_ENABLE_GSSAPI is not set
 # CONFIG_PACKAGE_bind-server-filter-aaaa is not set
 # CONFIG_PACKAGE_bind-tools is not set
-CONFIG_PACKAGE_ddns-scripts=y
-CONFIG_PACKAGE_ddns-scripts_aliyun=y
+#CONFIG_PACKAGE_ddns-scripts=y
+#CONFIG_PACKAGE_ddns-scripts_aliyun=y
 # CONFIG_PACKAGE_ddns-scripts_cloudflare.com-v4 is not set
-CONFIG_PACKAGE_ddns-scripts_dnspod=y
+#CONFIG_PACKAGE_ddns-scripts_dnspod=y
 # CONFIG_PACKAGE_ddns-scripts_freedns_42_pl is not set
 # CONFIG_PACKAGE_ddns-scripts_godaddy.com-v1 is not set
 # CONFIG_PACKAGE_ddns-scripts_no-ip_com is not set
@@ -5909,7 +5909,7 @@ CONFIG_PACKAGE_ip-full=y
 # CONFIG_PACKAGE_prince is not set
 # CONFIG_PACKAGE_quagga is not set
 # CONFIG_PACKAGE_rdma is not set
-CONFIG_PACKAGE_relayd=y
+#CONFIG_PACKAGE_relayd=y
 # CONFIG_PACKAGE_smcroute is not set
 # CONFIG_PACKAGE_ss is not set
 # CONFIG_PACKAGE_sslh is not set
@@ -6065,26 +6065,26 @@ CONFIG_PACKAGE_openconnect=y
 #
 # Configuration
 #
-CONFIG_OPENCONNECT_GNUTLS=y
+#CONFIG_OPENCONNECT_GNUTLS=y
 # CONFIG_OPENCONNECT_OPENSSL is not set
 # CONFIG_OPENCONNECT_STOKEN is not set
 # end of Configuration
 
 # CONFIG_PACKAGE_openfortivpn is not set
-CONFIG_PACKAGE_openvpn-easy-rsa=y
+#CONFIG_PACKAGE_openvpn-easy-rsa=y
 # CONFIG_PACKAGE_openvpn-mbedtls is not set
-CONFIG_PACKAGE_openvpn-openssl=y
-CONFIG_OPENVPN_openssl_ENABLE_LZO=y
-CONFIG_OPENVPN_openssl_ENABLE_LZ4=y
+#CONFIG_PACKAGE_openvpn-openssl=y
+#CONFIG_OPENVPN_openssl_ENABLE_LZO=y
+#CONFIG_OPENVPN_openssl_ENABLE_LZ4=y
 # CONFIG_OPENVPN_openssl_ENABLE_X509_ALT_USERNAME is not set
 # CONFIG_OPENVPN_openssl_ENABLE_MANAGEMENT is not set
-CONFIG_OPENVPN_openssl_ENABLE_FRAGMENT=y
-CONFIG_OPENVPN_openssl_ENABLE_MULTIHOME=y
-CONFIG_OPENVPN_openssl_ENABLE_PORT_SHARE=y
-CONFIG_OPENVPN_openssl_ENABLE_DEF_AUTH=y
-CONFIG_OPENVPN_openssl_ENABLE_PF=y
+#CONFIG_OPENVPN_openssl_ENABLE_FRAGMENT=y
+#CONFIG_OPENVPN_openssl_ENABLE_MULTIHOME=y
+#CONFIG_OPENVPN_openssl_ENABLE_PORT_SHARE=y
+#CONFIG_OPENVPN_openssl_ENABLE_DEF_AUTH=y
+#CONFIG_OPENVPN_openssl_ENABLE_PF=y
 # CONFIG_OPENVPN_openssl_ENABLE_IPROUTE2 is not set
-CONFIG_OPENVPN_openssl_ENABLE_SMALL=y
+#CONFIG_OPENVPN_openssl_ENABLE_SMALL=y
 # CONFIG_PACKAGE_openvpn-wolfssl is not set
 # CONFIG_PACKAGE_pgyvpn is not set
 # CONFIG_PACKAGE_pptpd is not set
@@ -6104,7 +6104,7 @@ CONFIG_OPENVPN_openssl_ENABLE_SMALL=y
 # CONFIG_PACKAGE_uanytun-nocrypt is not set
 # CONFIG_PACKAGE_uanytun-sslcrypt is not set
 # CONFIG_PACKAGE_vpnc is not set
-CONFIG_PACKAGE_vpnc-scripts=y
+#CONFIG_PACKAGE_vpnc-scripts=y
 # CONFIG_PACKAGE_wireguard-tools is not set
 # CONFIG_PACKAGE_xl2tpd is not set
 CONFIG_PACKAGE_zerotier=y
@@ -6283,8 +6283,8 @@ CONFIG_PACKAGE_wpad=y
 # CONFIG_PACKAGE_adguardhome is not set
 # CONFIG_PACKAGE_ahcpd is not set
 # CONFIG_PACKAGE_alfred is not set
-CONFIG_PACKAGE_apcupsd=y
-CONFIG_PACKAGE_apcupsd-cgi=y
+#CONFIG_PACKAGE_apcupsd=y
+#CONFIG_PACKAGE_apcupsd-cgi=y
 # CONFIG_PACKAGE_apinger is not set
 # CONFIG_PACKAGE_apinger-rrd is not set
 # CONFIG_PACKAGE_atlas-probe is not set
@@ -6460,7 +6460,7 @@ CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
 CONFIG_PACKAGE_ppp=y
 # CONFIG_PACKAGE_ppp-mod-passwordfd is not set
 # CONFIG_PACKAGE_ppp-mod-pppoa is not set
-CONFIG_PACKAGE_ppp-mod-pppoe=y
+#CONFIG_PACKAGE_ppp-mod-pppoe=y
 # CONFIG_PACKAGE_ppp-mod-pppol2tp is not set
 # CONFIG_PACKAGE_ppp-mod-pptp is not set
 # CONFIG_PACKAGE_ppp-mod-radius is not set
@@ -6470,7 +6470,7 @@ CONFIG_PACKAGE_ppp-mod-pppoe=y
 # CONFIG_PACKAGE_pppossh is not set
 # CONFIG_PACKAGE_pppstats is not set
 # CONFIG_PACKAGE_pppwn-cpp is not set
-CONFIG_PACKAGE_proto-bonding=y
+#CONFIG_PACKAGE_proto-bonding=y
 # CONFIG_PACKAGE_proxychains-ng is not set
 # CONFIG_PACKAGE_ptunnel-ng is not set
 # CONFIG_PACKAGE_radsecproxy is not set
@@ -6545,7 +6545,7 @@ CONFIG_PACKAGE_uclient-fetch=y
 # CONFIG_PACKAGE_uugamebooster is not set
 # CONFIG_PACKAGE_vallumd is not set
 # CONFIG_PACKAGE_verysync is not set
-CONFIG_PACKAGE_vlmcsd=y
+#CONFIG_PACKAGE_vlmcsd=y
 # CONFIG_PACKAGE_vncrepeater is not set
 # CONFIG_PACKAGE_vnstat is not set
 # CONFIG_PACKAGE_vnstat2 is not set
@@ -6557,7 +6557,7 @@ CONFIG_PACKAGE_vlmcsd=y
 # CONFIG_PACKAGE_wg-installer-client is not set
 # CONFIG_PACKAGE_wg-installer-server is not set
 # CONFIG_PACKAGE_wifi-presence is not set
-CONFIG_PACKAGE_wol=y
+#CONFIG_PACKAGE_wol=y
 # CONFIG_PACKAGE_wpan-tools is not set
 CONFIG_PACKAGE_wwan=y
 # CONFIG_PACKAGE_xinetd is not set
@@ -6944,7 +6944,7 @@ CONFIG_PACKAGE_usbmuxd=y
 # end of libselinux tools
 
 # CONFIG_PACKAGE_ack is not set
-CONFIG_PACKAGE_acpid=y
+#CONFIG_PACKAGE_acpid=y
 # CONFIG_PACKAGE_adb is not set
 # CONFIG_PACKAGE_airos-dfs-reset is not set
 # CONFIG_PACKAGE_ap51-flash is not set
@@ -7126,7 +7126,7 @@ CONFIG_PACKAGE_dbus=y
 # CONFIG_PACKAGE_docker-compose=y
 # CONFIG_PACKAGE_dockerd=y
 # CONFIG_DOCKER_CHECK_CONFIG is not set
-CONFIG_DOCKER_CGROUP_OPTIONS=y
+#CONFIG_DOCKER_CGROUP_OPTIONS=y
 # CONFIG_DOCKER_OPTIONAL_FEATURES is not set
 
 #
@@ -7335,8 +7335,8 @@ CONFIG_PACKAGE_shellsync=y
 # CONFIG_PACKAGE_slide-switch is not set
 # CONFIG_PACKAGE_smartd is not set
 # CONFIG_PACKAGE_smartd-mail is not set
-CONFIG_PACKAGE_smartmontools=y
-CONFIG_PACKAGE_smartmontools-drivedb=y
+#CONFIG_PACKAGE_smartmontools=y
+#CONFIG_PACKAGE_smartmontools-drivedb=y
 # CONFIG_PACKAGE_sms-tool is not set
 # CONFIG_PACKAGE_smstools3 is not set
 # CONFIG_PACKAGE_sockread is not set
